@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: depot2_production
-  username: depot2
-  password: <%= ENV["DEPOT2_DATABASE_PASSWORD"] %>
+  database: depot2
+  username: <%= Rails.application.credentials.postgres_user %>
+  password: <%= Rails.application.credentials.postgres_password %>
