@@ -54,9 +54,9 @@ server "3.106.137.181",
   roles: %w{web app db},
   ssh_options: {
     user: "deploy", # overrides user setting above
-    keys: %w(/home/deploy/.ssh/id_rsa),
+    keys: %w(/Users/teerawat/server-keys/awsrailsnew.pem),
     forward_agent: false,
-    auth_methods: %w(publickey password)
+    auth_methods: %w(publickey)
     # password: "please use keys"
   }
 #server '3.106.137.181', user: 'deploy', roles: %w{app db web}
